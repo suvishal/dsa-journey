@@ -1,0 +1,21 @@
+class Solution:
+    def sortedSquares(self, nums: List[int]) -> List[int]:
+        n = len(nums)
+        res = [0] * n
+
+        i, j, k = 0, n - 1, n - 1
+
+        while i <= j:
+            left = nums[i]
+            right = nums[j]
+
+            if left * left > right * right:
+                res[k] = left * left
+                i += 1
+            else:
+                res[k] = right * right
+                j -= 1
+
+            k -= 1
+
+        return res
