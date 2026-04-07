@@ -1,6 +1,6 @@
-## Day 1
 
-Solved:
+
+##Solved:
 - Two Sum
 - Best Time to Buy and Sell Stock
 - Valid Anagram
